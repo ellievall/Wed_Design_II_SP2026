@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title> Chapter 4 - JavaScript
-  </title>
- </head>
-<body>
- <h1 style="text-align:center;">Chapter 4 - Javascript </h1>
- <ol>
-  <li> <a href="01-Example.html" target="example"> JavaScript Example (page 101) </a> </li>
- </ol>
 <script>
-<!-- Your script starts here-->
-
-<!-- Your script ends here-->
+    var title="Example";
 </script>
-</body>
-</html>
+
+<script> document.write("<title>"+title+"</title"); </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;"><script>document.write(title);</script> Page</h1>
+
+        <p id="p1">This Text will be replaced with the text in the following Javascript</p>
+
+<script>
+    <!--Start your Script code-->
+    document.getElementByID("p1").innerHTML="Welcome to the exciting world of Javascript!";
+    <!-- End your Script code -->
+</script>
+    </body>
