@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<script>
+    var title="Funtion";
+</script>
+
+<script> document.write("<title>"+title+"</title"); </script>
+
+<script src="./script.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;"><script>document.write(title);</script> Page</h1>
+
+<p>Click the button to create and display two variables.</p>
+<button onclick="myVariables()">Click Me</button>
+
+<p id="number"></p>
+<p id="string"></p>
+<p id="boolean"></p>
+
+<!--Start your script here-->
+
+function myVariables()
+(
+
+Var ntotalAmount=1000;
+var sService="Accountancy";
+document.getElementById("number").innerHTML="Amount: "+ntotalAmount;
+document.getElementById("string").innerHTML="Service: "+sService;
+document.getElementById("boolean").innerHTML=(ntotalAmount ==1000);
+
+
+
+)
+<!--End your script here-->
+
+</script>
+</body>
+</html>
