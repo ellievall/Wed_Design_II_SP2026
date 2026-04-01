@@ -14,14 +14,37 @@
     <script>document.write(menu);</script>
     <h1 style="text-align:center;"> <script>document.write(title);</script> Page</h1>
     
+    <h3 style="text-align: center;">Center Stock Level</h3>
+
+    <button onclick="StockLevel()">Click Me</button>
+    <p id="stockStatus"></p>
 
 <!--Start your script here-->
 <script>
 
+function StockLevel()
+{
+    var stock=1;
+    var reorder=10;
+
+    if (stock<reorder) {
+        alert="Low"
+    }
+    else if (stock < 100)
+    {
+        alert="Good";
+    }
+    else
+    {
+        alert="High";
+    }
+    document.getElementById("stockStatus").innerHTML=Alert;
+}
+
 </script>
 <!--End your script here-->
 
-</script>
+
 </body>
 </html>
 
